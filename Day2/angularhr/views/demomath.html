@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+</head>
+<body>
+<h1>Calculator</h1>
+<div ng-app="hrApp">
+<div ng-controller="DemoMathController">
+    <p>
+        <a class="btn btn-primary btn-lg" role="button" ng-click="addNumbers()">+</a>
+
+        <a class="btn btn-primary btn-lg" role="button" ng-click="diffNumbers()">-</a>
+
+        <a class="btn btn-primary btn-lg" role="button" ng-click="prodNumbers()">*</a>
+
+        <a class="btn btn-primary btn-lg" role="button" ng-click="divNumbers()">/</a>
+    </p>
+    <p>Number A: <input type="number" ng-model="numberA"></p>
+    <p>Number B: <input type="number" ng-model="numberB"></p>
+    <p>Result: <span ng-bind="resultOp"></span></p>
+</div>
+</div>
+<script type="text/javascript" src="../bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../scripts/app.js"></script>
+<script type="text/javascript" src="../scripts/DemoMathController.js"></script>
+</body>
+</html>
